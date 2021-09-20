@@ -1,0 +1,17 @@
+contact1 = "Ian Ayotte"
+contact2 = "Tod's Building Co."
+contact3 = "Gord Johns"
+contact4 = "Anne Chovie"
+contact5 = "Tom Ato"
+
+contact1Num = "780-478-4583"
+contact2Num = "1800-267-2001"
+contact3Num = "587-351-2341"
+contact4Num = "803-417-8619"
+contact5Num = "990-473-7373"
+
+contact1Email = "iansayottes@gmail.com"
+contact2Email = "todsbuilding@outlook.com"
+contact3Email = "g.johns@gmail.com"
+contact4Email = "annec@gmail.com"
+contact5Email = "t.ato@gmail.com"
