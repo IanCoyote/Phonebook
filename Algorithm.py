@@ -1,6 +1,6 @@
 import AlgorithmModules
 
-
+# Global Variables grabbed from the module file
 newContact1 = AlgorithmModules.contact1
 newContact1Email = AlgorithmModules.contact1Email
 newContact1Number = AlgorithmModules.contact1Num
@@ -21,11 +21,18 @@ newContact5 = AlgorithmModules.contact5
 newContact5Email = AlgorithmModules.contact5Email
 newContact5Number = AlgorithmModules.contact5Num
 
+# Input for the users desired contact
+
 lookup1 = (input("Welcome, who are you looking for today? "))
 
+# Processing the users choice and deciding if it is a valid option or not
+
 if lookup1 == "newContact1":
+    # Outputting the name of the chosen contact
     print("Contact Name: ", newContact1)
+    # Asking for the user to input the information needed (email or number)
     lookup2 = (input("What info would you like from this contact? "))
+    # Proccessing user choice and outputting the information attached
     if lookup2 == "email":
         print(newContact1, "'s email is ", newContact1Email)
     elif lookup2 == "number":
@@ -36,8 +43,11 @@ else:
     pass
 
 if lookup1 == "newContact2":
+     # Outputting the name of the chosen contact
     print("Contact Name: ", newContact2)
+    # Asking for the user to input the information needed (email or number)
     lookup2 = (input("What info would you like from this contact? "))
+     # Proccessing user choice and outputting the information attached
     if lookup2 == "email":
         print(newContact2, "'s email is ", newContact2Email)
     elif lookup2 == "number":
@@ -48,8 +58,11 @@ else:
     pass
 
 if lookup1 == "newContact3":
+     # Outputting the name of the chosen contact
     print("Contact Name: ", newContact3)
+    # Asking for the user to input the information needed (email or number)
     lookup2 = (input("What info would you like from this contact? "))
+    # Proccessing user choice and outputting the information attached
     if lookup2 == "email":
         print(newContact3, "'s email is ", newContact3Email)
     elif lookup2 == "number":
@@ -60,8 +73,11 @@ else:
     pass
 
 if lookup1 == "newContact4":
+     # Outputting the name of the chosen contact
     print("Contact Name: ", newContact4)
+    # Asking for the user to input the information needed (email or number)
     lookup2 = (input("What info would you like from this contact? "))
+    # Proccessing user choice and outputting the information attached
     if lookup2 == "email":
         print(newContact4, "'s email is ", newContact4Email)
     elif lookup2 == "number":
@@ -72,8 +88,11 @@ else:
     pass
 
 if lookup1 == "newContact5":
+     # Outputting the name of the chosen contact
     print("Contact Name: ", newContact5)
+    # Asking for the user to input the information needed (email or number)
     lookup2 = (input("What info would you like from this contact? "))
+    # Proccessing user choice and outputting the information attached
     if lookup2 == "email":
         print(newContact5, "'s email is ", newContact5Email)
     elif lookup2 == "number":
@@ -81,4 +100,7 @@ if lookup1 == "newContact5":
     else:
         print ("That is not available.")
 else:
-    print ("That is not an existing contact.")
+    pass
+
+if lookup1 != ("newContact1" or "newContact2" or "newContact3" or "newContact4" or "newContact5"):
+    print("That is not an available contact")
